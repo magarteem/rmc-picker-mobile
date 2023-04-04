@@ -1,0 +1,20 @@
+@import "src/styles/variable";
+
+.secondStepFormRegister {
+ width: 100%;
+ max-width: 450px;
+
+ h2 {
+  font-family: "Gilroy_Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  color: $white;
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+ }
+
+ .btnFormWrapper {
+  margin: 40px 0 20px;
+ }
+}

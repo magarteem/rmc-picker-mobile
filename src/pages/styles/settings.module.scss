@@ -1,0 +1,34 @@
+@import "src/styles/variable";
+
+.customStyleSvg {
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 40px;
+ width: 40px;
+
+ path {
+  width: 13px;
+  height: 13px;
+  fill: #2b6c00;
+ }
+}
+
+.mainSettings {
+ .buttonAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+
+  .title {
+   display: flex;
+
+   p {
+    margin-left: 16px;
+    color: #1a1c18;
+   }
+  }
+ }
+}

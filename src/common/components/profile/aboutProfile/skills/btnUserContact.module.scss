@@ -1,0 +1,32 @@
+@import "src/styles/variable";
+
+.btnWrapperPosition {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ column-gap: 10px;
+ padding: 0 0 12px;
+
+ @media (min-width: $mediaMaxWidth575px) {
+  justify-content: space-around;
+ }
+ @media (min-width: $mediaMaxWidth991px) {
+  justify-content: space-evenly;
+ }
+
+ .profileData {
+  width: 100%;
+
+  h2 {
+   font-weight: 700;
+   font-size: 20px;
+   color: #212121;
+   margin-bottom: 20px;
+  }
+
+  .btnPosition {
+   display: flex;
+   justify-content: space-between;
+  }
+ }
+}

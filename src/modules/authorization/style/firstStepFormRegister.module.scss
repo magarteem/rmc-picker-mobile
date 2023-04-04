@@ -1,0 +1,51 @@
+@import "src/styles/variable";
+
+.wrapperFirstFormRegister {
+ @include flex_direction_column_position();
+
+ justify-content: space-between;
+ height: 100%;
+ width: 100%;
+ max-width: 450px;
+
+ .styleInput {
+  width: 100%;
+  margin-top: 20px;
+
+  .title {
+   font-family: "Gilroy_Bold", sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+   display: block;
+   color: $white;
+   margin-bottom: 0.5rem;
+  }
+
+  input {
+   height: 50px;
+   padding: 18px 20px 17px;
+  }
+ }
+
+ .forgetPassword {
+  align-self: flex-end;
+  color: $white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+ }
+
+ .styleBtn {
+  @include flex_horizont_position();
+  height: 52px;
+  width: 100%;
+  margin-top: 40px;
+ }
+
+ .see {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+ }
+}

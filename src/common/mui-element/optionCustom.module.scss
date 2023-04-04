@@ -1,0 +1,16 @@
+.optionCustom {
+ height: 0 !important;
+ display: none !important;
+ overflow: hidden !important;
+ padding: 0 !important;
+}
+
+.iconArrow {
+ transform: rotate(180deg);
+}
+
+.openMenu {
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}

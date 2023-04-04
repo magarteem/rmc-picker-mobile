@@ -1,0 +1,9 @@
+@import "src/styles/variable";
+
+.adsLayoutItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #c6d1b8;
+  border-radius: 12px;
+}

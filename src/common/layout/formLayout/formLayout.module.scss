@@ -1,0 +1,21 @@
+@import "src/styles/variable";
+
+.formLayout {
+ @include flex_direction_column_align_center_position();
+ width: 100%;
+
+ // background: linear-gradient(
+ //  270.95deg,
+ //  #ff7134 0%,
+ //  #e02b2b 100%
+ // );
+ background: $backgroundFonts;
+
+ .formFieldsWrapper {
+  background: #fdfdf5;
+  border-radius: 20px 20px 0px 0px;
+  padding: 24px 16px 0;
+  width: 100%;
+  max-width: 600px;
+ }
+}

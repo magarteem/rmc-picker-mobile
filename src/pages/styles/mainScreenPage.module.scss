@@ -1,0 +1,9 @@
+@import "src/styles/variable";
+
+.mainScreen {
+ @include flex_direction_column_position();
+ width: 100%;
+ max-width: 1024px;
+ height: 100%;
+ // overflow-y: auto;
+}

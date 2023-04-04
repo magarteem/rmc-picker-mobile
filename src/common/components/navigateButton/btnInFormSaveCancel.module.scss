@@ -1,0 +1,14 @@
+@import "src/styles/variable";
+
+.sendDataForm {
+ display: flex;
+ justify-content: space-between;
+ column-gap: 10px;
+ width: 100%;
+
+ .btnWrapper {
+  @include flex_horizont_position();
+  height: 52px;
+  width: 100%;
+ }
+}

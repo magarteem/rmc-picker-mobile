@@ -1,0 +1,67 @@
+.formChangeProfile {
+ display: flex;
+ flex-direction: column;
+ padding: 16px 16px 0;
+ max-width: 650px;
+ margin: 0 auto;
+ row-gap: 20px;
+
+ .styleInput {
+  //margin-top: 20px;
+  width: 100%;
+  max-width: 650px;
+
+  .wrapperBlockInput {
+   height: 50px;
+
+   input {
+    height: 48px !important;
+    padding: 18px 20px 17px;
+   }
+  }
+
+  .textarea {
+   min-height: 50px;
+  }
+
+  .notes {
+   display: block;
+   font-size: 12px;
+   color: #828282;
+  }
+
+  .sizeInput {
+   min-height: 48px;
+
+   input {
+    height: 48px;
+   }
+
+   textarea {
+    min-height: 48px !important;
+   }
+  }
+ }
+
+ .selectField {
+  width: 100%;
+  max-width: 650px;
+  min-height: 48px;
+
+  .wrapperBlockInput {
+   height: 50px;
+
+   input {
+    height: 48px !important;
+    padding: 18px 20px 17px;
+   }
+  }
+ }
+
+ .btnFormWrapper {
+  width: 100%;
+  //margin-top: 20px;
+  padding: 20px 0;
+  max-width: 650px;
+ }
+}

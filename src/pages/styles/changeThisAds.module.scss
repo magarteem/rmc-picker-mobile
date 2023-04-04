@@ -1,0 +1,20 @@
+@import "src/styles/variable";
+
+.formVacancy {
+ @include flex_direction_column_align_center_position();
+ justify-content: flex-start;
+ max-width: 650px;
+ width: 100%;
+ row-gap: 24px;
+ padding: 24px 0 80px;
+
+ // .btnFormWrapper {
+ //  max-width: 650px;
+ //  width: 100%;
+ //  padding: 20px 0;
+
+ //  @media screen and (max-width: $mediaMaxWidth320px) {
+ //   padding: 0;
+ //  }
+ // }
+}

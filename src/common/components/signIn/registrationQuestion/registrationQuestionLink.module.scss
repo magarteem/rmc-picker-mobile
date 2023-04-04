@@ -1,0 +1,42 @@
+@import "src/styles/variable";
+
+.registrationQuestionLink {
+  @include flex_horizont_position();
+  color: $white;
+  position: fixed;
+  bottom: 0;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0 16px;
+
+  @media (max-height: $mediaMaxHeight560px) {
+    margin-bottom: 10px;
+  }
+  @media (max-height: $mediaMaxHeight500px) {
+    position: static;
+    padding: 20px 16px 0;
+  }
+
+  span {
+    padding-right: 8px;
+    color: #ebeceb;
+    letter-spacing: 2px;
+    text-align: center;
+
+    @media (max-width: $mediaMaxWidth340px) {
+      font-size: 17px;
+    }
+  }
+
+  a {
+    color: $white;
+    background-color: inherit;
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (max-width: $mediaMaxWidth340px) {
+      font-size: 17px;
+    }
+  }
+}

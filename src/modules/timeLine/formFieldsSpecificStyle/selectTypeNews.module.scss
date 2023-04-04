@@ -1,0 +1,26 @@
+@import "src/styles/variable";
+
+.wrapperBlockInput {
+ height: 40px;
+ font-size: 14px;
+ width: 100%;
+
+ @media (max-width: $mediaMaxWidth400px) {
+  min-width: 50%;
+  height: 48px;
+ }
+
+ input {
+  height: 48px !important;
+  padding: 18px 20px 17px;
+  font-weight: 600;
+ }
+
+ fieldset {
+  display: none;
+
+  @media (max-width: $mediaMaxWidth400px) {
+   display: block;
+  }
+ }
+}

@@ -1,0 +1,20 @@
+@import "src/styles/variable";
+
+.requirements {
+ align-self: flex-start;
+ h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+ }
+}
+
+.btnFormWrapper {
+ max-width: 650px;
+ width: 100%;
+ padding: 20px 0;
+
+ @media screen and (max-width: $mediaMaxWidth320px) {
+  padding: 0;
+ }
+}

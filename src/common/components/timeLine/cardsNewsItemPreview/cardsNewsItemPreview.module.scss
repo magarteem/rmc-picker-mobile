@@ -1,0 +1,14 @@
+@import "src/styles/variable";
+
+.cardsItemWrapp {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ padding: 16px 0;
+ border: 1px solid #c6d1b8;
+ border-radius: 12px;
+
+ .customStyleA {
+  margin-left: 16px;
+ }
+}

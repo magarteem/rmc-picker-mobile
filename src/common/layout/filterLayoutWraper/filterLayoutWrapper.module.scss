@@ -1,0 +1,16 @@
+@import "src/styles/variable";
+
+.filterForAds {
+ display: flex;
+ flex-direction: column;
+
+ .toutchLine {
+  align-self: center;
+  width: 32px;
+  height: 4px;
+  background: #66784e;
+  opacity: 0.4;
+  border-radius: 100px;
+  margin-bottom: 16px;
+ }
+}

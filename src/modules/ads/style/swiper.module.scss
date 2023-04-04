@@ -1,0 +1,47 @@
+@import "src/styles/variable";
+
+.swiper {
+  margin: 24px 0;
+
+  .swiper-wrapper li:last-of-type {
+    margin-right: 20px;
+  }
+
+  & > div {
+    padding: 0 10px;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .swiperCard {
+    cursor: pointer;
+    max-width: 120px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      transition: all 0.3s;
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0px 14px 30px rgba(104, 73, 73, 0.05);
+    }
+
+    .link {
+      @include flex_direction_column_align_center_position();
+      justify-content: space-between;
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      padding: 8px;
+
+      img {
+        align-self: flex-end;
+        padding-right: 8px;
+      }
+    }
+  }
+}

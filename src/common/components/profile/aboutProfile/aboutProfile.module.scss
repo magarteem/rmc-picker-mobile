@@ -1,0 +1,93 @@
+@import "src/styles/variable";
+
+.main {
+ flex: 1 0 auto;
+ margin: 0 16px 16px;
+ padding-bottom: 80px;
+
+ & > div:not(:first-child):not(.noBorder) {
+  border-top: 1px solid #ebeceb;
+ }
+
+ h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+ }
+
+ .linkPublicationsMusician {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 12px 0;
+
+  a {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   font-weight: 600;
+   font-size: 14px;
+   color: #2b6c00;
+  }
+ }
+
+ .btnUserContact {
+  @include flex_position();
+  width: 100%;
+  height: 35px;
+
+  .buttonContactWrapper {
+   width: 100%;
+   height: 100%;
+   background-color: $white;
+   border-radius: 100px;
+   color: #2b6c00;
+   border: 1.5px solid #2b6c00;
+   font-size: 14px;
+   font-weight: 600;
+   transition: all 0.2s;
+   padding: 0.4rem;
+
+   &:hover {
+    background: rgb(199 221 169);
+   }
+
+   &:active {
+    background-color: rgb(59, 101, 1);
+    color: $white;
+   }
+
+   &:disabled {
+    background-color: #cdcdcc;
+    border: none;
+    color: $white;
+   }
+  }
+ }
+
+ .styleAbout {
+  font-size: 16px;
+  line-height: 24px;
+  color: #43483e;
+
+  .titleSpan {
+   cursor: pointer;
+   white-space: nowrap;
+   padding-right: 8px;
+   font-weight: 600;
+   color: #1a1c18;
+  }
+
+  .underline {
+   text-decoration: underline;
+  }
+  .siteColor {
+   color: #2b6c00;
+  }
+ }
+
+ .styleAbout.custonPadding {
+  display: block;
+  margin-bottom: 12px;
+ }
+}

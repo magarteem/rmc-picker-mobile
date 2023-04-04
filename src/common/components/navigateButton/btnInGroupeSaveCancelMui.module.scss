@@ -1,0 +1,23 @@
+@import "src/styles/variable";
+
+.sendDataForm {
+ display: flex;
+ justify-content: space-between;
+ column-gap: 10px;
+ width: 100%;
+
+ @media screen and (max-width: $mediaMaxWidth400px) {
+  column-gap: 5px;
+ }
+
+ @media screen and (max-width: $mediaMaxWidth320px) {
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ .btnWrapper {
+  @include flex_horizont_position();
+  height: 40px;
+  width: 100%;
+ }
+}

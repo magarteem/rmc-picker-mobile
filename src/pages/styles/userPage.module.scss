@@ -1,0 +1,9 @@
+.main {
+  flex: 1 0 auto;
+  margin: 16px 16px 16px;
+  padding-bottom: 50px;
+
+  & > div:not(:last-child) {
+    border-bottom: 1px solid #ebeceb;
+  }
+}

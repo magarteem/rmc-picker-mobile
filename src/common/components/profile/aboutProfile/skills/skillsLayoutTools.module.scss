@@ -1,0 +1,101 @@
+@import "src/styles/variable";
+
+.skills {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 12px 0;
+
+ .profileDataFields {
+  width: 100%;
+  h2 {
+   font-weight: 700;
+   font-size: 18px;
+   color: #212121;
+   margin-bottom: 12px;
+  }
+
+  .btnPosition {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .skills_item {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+
+   @media (max-width: $mediaMaxWidth340px) {
+    gap: 4px;
+   }
+
+   .item {
+    display: flex;
+    align-items: center;
+    color: #1a1c18;
+    font-size: 14px;
+    background: linear-gradient(
+      0deg,
+      rgba(43, 108, 0, 0.08),
+      rgba(43, 108, 0, 0.08)
+     ),
+     #fdfdf5;
+    border: 1px solid #66784e;
+    border-radius: 30px;
+    padding: 6px 12px;
+
+    @media (max-width: $mediaMaxWidth340px) {
+     border-radius: 15px;
+     padding: 6px;
+     font-size: 16px;
+    }
+
+    img {
+     margin-right: 6px;
+
+     @media (max-width: $mediaMaxWidth340px) {
+      margin-right: 4px;
+      height: 20px;
+     }
+    }
+   }
+
+   .itemHidden {
+    cursor: pointer;
+    background: none;
+   }
+
+   //#  any найти где не нужен textNotes инструменты и жанры сравнить
+   .textNotes {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.1px;
+    padding: 0 6px;
+    color: #586274;
+   }
+
+   .containerImg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    width: 100%;
+
+    @media (min-width: $mediaMaxWidth575px) {
+     justify-content: flex-start;
+    }
+
+    .img {
+     display: flex;
+     max-width: 48%;
+
+     img {
+      width: 100%;
+      border-radius: 20px;
+     }
+    }
+   }
+  }
+ }
+}

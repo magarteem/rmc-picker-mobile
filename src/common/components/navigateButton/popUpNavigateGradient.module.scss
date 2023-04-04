@@ -1,0 +1,172 @@
+@import "src/styles/variable";
+
+.popUpNavigateGradient {
+ position: relative;
+ position: fixed;
+ bottom: 0;
+ height: 50px;
+ display: flex;
+ width: 100%;
+ max-width: 1024px;
+ z-index: 100;
+
+ .radialGradientFontsWrapper {
+  height: 50px;
+  display: block;
+
+  svg {
+   height: 50px;
+  }
+
+  .duttonAdd {
+   position: absolute;
+   display: flex;
+   cursor: pointer;
+   left: 50%;
+   transform: translateX(-50%);
+   // left: 145px;
+   top: -30px;
+   width: 60px;
+   height: 60px;
+   background: linear-gradient(
+    270.95deg,
+    #ff7134 0%,
+    #e02b2b 100%
+   );
+   border-radius: 40px;
+
+   .plas {
+    @include flex_position();
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border: 2px solid #ffffff;
+
+    &:before,
+    &:after {
+     position: absolute;
+     content: "";
+     display: block;
+     background: linear-gradient(
+      270.95deg,
+      #ff7134 0%,
+      #e02b2b 100%
+     );
+     width: 12px;
+     height: 2px;
+    }
+    &:after {
+     transform: rotate(90deg);
+    }
+   }
+  }
+ }
+ .tapLeftBlock,
+ .tapRightBlock {
+  position: relative;
+  @include flex_position();
+  flex: 1 0 30%;
+
+  a {
+   @include flex_position();
+   width: 50%;
+   height: 100%;
+   cursor: pointer;
+
+   path {
+    stroke: #ffffff;
+   }
+  }
+ }
+
+ .tapLeftBlock {
+  border-top-left-radius: 10px;
+  background: linear-gradient(
+   94deg,
+   rgba(66, 110, 35, 1) 0%,
+   rgba(115, 163, 67, 1) 100%
+  );
+
+  &:before {
+   z-index: -1;
+   position: absolute;
+   display: block;
+   right: -2px;
+   top: 4px;
+   content: "";
+   width: 3px;
+   height: 100%;
+   background-color: #7aa34a;
+  }
+
+  .specifiedFill {
+   stroke: rgb(255, 255, 255);
+   fill: #ffffff;
+  }
+ }
+
+ .tapRightBlock {
+  border-top-right-radius: 10px;
+  background: linear-gradient(
+   93deg,
+   #8fc155 0%,
+   #bef574 100%
+  );
+
+  &:before {
+   z-index: -1;
+   position: absolute;
+   display: block;
+   left: -2px;
+   top: 4px;
+   content: "";
+   width: 3px;
+   height: 100%;
+   background-color: #8bc34a;
+  }
+ }
+
+ .active {
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  outline-width: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  .icon {
+   stroke: rgb(255, 115, 0);
+   fill: rgb(255, 115, 0);
+
+   path {
+    stroke: rgb(255, 115, 0);
+   }
+  }
+
+  &:after {
+   content: "";
+   z-index: -1;
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   background: #bdf5745d;
+   border-radius: 50%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   animation: ripple 0.6s;
+
+   @keyframes ripple {
+    100% {
+     width: 150%;
+     height: 150%;
+     opacity: 1;
+    }
+   }
+  }
+ }
+}

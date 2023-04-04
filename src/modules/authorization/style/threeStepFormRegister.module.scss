@@ -1,0 +1,56 @@
+@import "src/styles/variable";
+
+.main {
+ @include flex_direction_column_align_center_position();
+ justify-content: flex-start;
+ max-width: 650px;
+ width: 100%;
+ row-gap: 24px;
+ padding-bottom: 24px;
+
+ .styleInput {
+  width: 100%;
+
+  .sizeInput {
+   min-height: 48px;
+
+   input {
+    height: 48px;
+   }
+
+   textarea {
+    min-height: 48px !important;
+   }
+  }
+
+  .notes {
+   display: block;
+   font-size: 12px;
+   color: #828282;
+  }
+ }
+
+ .selectField {
+  height: 48px;
+  width: 100%;
+ }
+
+ // .selectFieldCustomHeight {
+ //  width: 100%;
+ // }
+
+ .requirements {
+  align-self: flex-start;
+  h2 {
+   font-weight: 700;
+   font-size: 18px;
+   color: #212121;
+  }
+ }
+}
+
+.btnFormWrapper {
+ max-width: 650px;
+ width: 100%;
+ padding: 20px 0;
+}

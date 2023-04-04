@@ -1,0 +1,40 @@
+@import "src/styles/variable";
+
+.customAddPadding {
+ margin-top: 10px;
+
+ .styleInput {
+  position: relative;
+  width: 100%;
+
+  .sizeInput {
+   min-height: 48px;
+
+   input {
+    height: 48px;
+   }
+  }
+
+  img {
+   position: absolute;
+   left: 11px;
+   top: 13px;
+  }
+ }
+}
+
+//.listAds {
+// display: flex;
+// flex-direction: column;
+// row-gap: 8px;
+// width: 100%;
+
+// a {
+//  text-decoration: none;
+//  //padding-bottom: 16px;
+// }
+
+// .respond {
+//  padding: 16px 0;
+// }
+//}

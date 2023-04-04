@@ -1,0 +1,25 @@
+@mixin flex_position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// @include flex_position();
+
+@mixin flex_horizont_position {
+  display: flex;
+  justify-content: center;
+}
+// @include flex_horizont_position();
+
+@mixin flex_direction_column_position {
+  display: flex;
+  flex-direction: column;
+}
+// @include flex_direction_column_position();
+
+@mixin flex_direction_column_align_center_position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// @include flex_direction_column_align_center_position();

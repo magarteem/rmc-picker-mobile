@@ -1,0 +1,48 @@
+@import "src/styles/variable";
+
+.commonLoginLayout {
+ @include flex_direction_column_align_center_position();
+ justify-content: space-between;
+ position: relative;
+ width: 100%;
+ min-height: 100%;
+ overflow: hidden;
+ flex: 1 0 auto;
+ padding: 66px 16px 0;
+ background-image: $backgroundFonts;
+
+ @media (max-height: $mediaMaxHeight650px) {
+  padding: 20px 16px 0;
+ }
+
+ &::before {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(../../../assets/icons/logoTriton.svg);
+  background-repeat: no-repeat;
+  animation: trans 1s forwards;
+  background-size: 153% 100%;
+  background-position: -39px -35px;
+
+  @keyframes trans {
+   0% {
+    position: absolute;
+    transform: translate(100px, 100px);
+   }
+   100% {
+    transform: translate(0);
+   }
+  }
+ }
+
+ .fieldLogin {
+  @include flex_direction_column_align_center_position();
+  width: 100%;
+  margin-top: 66px;
+ }
+}

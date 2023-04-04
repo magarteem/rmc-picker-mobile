@@ -1,0 +1,7 @@
+@import "src/styles/variable";
+
+.fieldLogin {
+  @include flex_direction_column_align_center_position();
+  width: 100%;
+  max-width: 450px;
+}

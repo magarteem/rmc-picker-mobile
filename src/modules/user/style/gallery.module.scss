@@ -1,0 +1,64 @@
+@import "src/styles/variable";
+
+.swiper {
+ // padding: 12px 0;
+ overflow: auto;
+
+ & > div {
+  //padding: 0 10px;
+
+  & > div {
+   display: flex;
+   // justify-content: space-between;
+  }
+ }
+
+ .swiper-wrapper {
+  align-items: center !important;
+  background-color: red !important;
+ }
+
+ h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+  margin-bottom: 12px;
+ }
+
+ .swiperCard {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: 124px;
+  height: 124px;
+  border-radius: 4px;
+  transition: all 0.3s;
+
+  &:hover {
+   transition: all 0.3s;
+   transform: translateY(-5px) scale(1.02);
+   box-shadow: 0px 14px 30px rgba(104, 73, 73, 0.05);
+  }
+
+  img {
+   height: 124px;
+   object-fit: cover;
+  }
+ }
+}
+
+.styleAbout {
+ font-size: 16px;
+ line-height: 24px;
+ color: #43483e;
+ margin-top: 8px;
+
+ .titleSpan {
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #1a1c18;
+  padding-right: 8px;
+ }
+}

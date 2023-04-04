@@ -1,0 +1,151 @@
+@import "src/styles/variable";
+
+.formWrapCreateNews {
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+
+ .textFields {
+  flex: 1 0 auto;
+
+  .styleInput {
+   width: 100%;
+
+   .sizeInput {
+    min-height: 48px;
+
+    textarea {
+     min-height: 48px !important;
+    }
+   }
+
+   .notes {
+    display: block;
+    font-size: 12px;
+    color: #828282;
+   }
+  }
+
+  .imgWrap {
+   position: relative;
+   // overflow: hidden;
+   border-radius: 4px;
+   margin: 24px 0;
+
+   // img {
+   //  align-self: center;
+   //  width: 100%;
+   //  max-width: 600px;
+   // }
+
+   // .clearImgButton {
+   //  cursor: pointer;
+   //  width: 24px;
+   //  height: 24px;
+   //  position: absolute;
+   //  top: 10px;
+   //  right: 10px;
+
+   //  img {
+   //   width: 100%;
+   //  }
+   // }
+
+   .imgCards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 4px;
+
+    .photo {
+     width: 100%;
+     object-fit: cover;
+    }
+
+    .clearImgButton {
+     position: absolute;
+     top: 17px;
+     right: 17px;
+    }
+   }
+  }
+ }
+
+ .selectParams {
+  height: auto;
+
+  .selectFieldCustomHeight.addMargin {
+   margin: 24px 0 16px;
+
+   @media (max-width: $mediaMaxWidth340px) {
+    margin: 12px 0 16px;
+   }
+  }
+
+  .selectBlock {
+   display: flex;
+   flex: 1 0 125px;
+
+   @media (max-width: $mediaMaxWidth400px) {
+    flex-direction: column;
+    gap: 12px;
+   }
+
+   .selectField {
+    display: flex;
+    align-items: center;
+   }
+   .selectField.custom {
+    height: 48px;
+    flex: 0 1 100%;
+   }
+
+   & div:first-child {
+    min-width: 185px;
+   }
+
+   & div:last-child {
+    width: 100%;
+   }
+  }
+
+  .sendBlock {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 10px;
+   margin: 12px 0 20px;
+
+   @media (max-width: $mediaMaxWidth340px) {
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0 20px;
+   }
+
+   .btnWrapper {
+    @include flex_horizont_position();
+    height: 40px;
+    width: 100%;
+
+    input {
+     opacity: 0;
+     height: 0;
+     width: 0;
+     line-height: 0;
+     overflow: hidden;
+     padding: 0;
+     margin: 0;
+    }
+   }
+
+   .btnWrapper.imgSend {
+    @media (max-width: $mediaMaxWidth400px) {
+     width: 40%;
+    }
+   }
+  }
+ }
+}

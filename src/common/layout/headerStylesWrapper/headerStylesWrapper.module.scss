@@ -1,0 +1,42 @@
+@import "src/styles/variable";
+
+.headerStylesWrapper {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ color: #000;
+ height: 64px;
+
+ .titleNavigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  column-gap: 16px;
+
+  p {
+   font-weight: 700;
+   font-size: 22px;
+   color: #1a1c18;
+  }
+ }
+
+ .titleSettings {
+  display: flex;
+  align-items: center;
+  //column-gap: 12px;
+  height: 100%;
+
+  //a {
+  // cursor: pointer;
+  // @include flex_position();
+  // width: 24px;
+  // height: 24px;
+  // img {
+  //  width: 24px;
+  //  height: 24px;
+  // }
+  //}
+ }
+}

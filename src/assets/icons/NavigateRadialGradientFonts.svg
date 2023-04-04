@@ -1,0 +1,31 @@
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 81.8 50" style="enable-background:new 0 0 81.8 50;" xml:space="preserve">
+	<style type="text/css">
+		.st0{clip-path:url(#SVGID_2_);}
+		.st1{clip-path:url(#SVGID_4_);}
+		.st2{fill:url(#SVGID_5_);}
+	</style>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="81.8" height="50" />
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_" style="overflow:visible;" />
+		</clipPath>
+		<g class="st0">
+			<defs>
+				<rect id="SVGID_3_" x="-145.8" width="375.3" height="50" />
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_" style="overflow:visible;" />
+			</clipPath>
+			<g class="st1">
+				<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="226.8453" y1="0.6757" x2="-146.8927" y2="14.3312" gradientTransform="matrix(1 0 0 -1 0 44.7778)">
+					<stop offset="0" style="stop-color:#BEF574" />
+					<stop offset="1" style="stop-color:#426E23" />
+				</linearGradient>
+				<path class="st2" d="M-137.8,0H-1.4c4.3,0,7.7,3.3,8.7,7.4c4,15.4,17.4,27.3,33.9,27.3c16.6,0,30.2-10.6,34-27.2
+				C76.2,3.4,79.6,0,83.9,0h137.4c4.4,0,8,3.9,8,8.8v65.6h-375l0-65.6C-145.8,3.9-142.2,0-137.8,0z" />
+			</g>
+		</g>
+	</g>
+</svg>

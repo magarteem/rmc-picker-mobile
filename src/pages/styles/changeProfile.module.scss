@@ -1,0 +1,27 @@
+@import "src/styles/variable";
+
+.main {
+ flex: 1 0 auto;
+
+ & > div:not(:last-child) {
+  border-bottom: 1px solid #ebeceb;
+ }
+
+ .styleText {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5b9232;
+  background-color: inherit;
+ }
+
+ .changeAvatar {
+  @include flex_horizont_position();
+  height: 35px;
+
+  button {
+   padding: 0 20px 25px;
+  }
+ }
+}

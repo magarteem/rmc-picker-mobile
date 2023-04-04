@@ -1,0 +1,21 @@
+@import "src/styles/variable";
+
+.cardsLayoutItem {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ padding: 16px;
+ border: 1px solid #c6d1b8;
+ border-radius: 12px;
+
+ @media (max-width: $mediaMaxWidth350px) {
+  padding: 16px 5px;
+ }
+}
+
+//.cardsLayoutItem {
+// width: 100%;
+// padding: 16px 0 16px;
+// border: 1px solid #c6d1b8;
+// border-radius: 12px;
+//}

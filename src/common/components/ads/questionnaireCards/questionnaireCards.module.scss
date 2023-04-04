@@ -1,0 +1,75 @@
+@import "src/styles/variable";
+
+.questionnaireCards {
+ display: flex;
+ flex-direction: column;
+ padding: 12px 0;
+
+ .headerQuestionnaireCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+
+  .author {
+   display: flex;
+   align-items: center;
+
+   .avatar {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+   }
+
+   .infoAuthor {
+    .name {
+     font-weight: 700;
+     font-size: 18px;
+     color: #1a1c18;
+    }
+
+    .visit {
+     font-size: 14px;
+     color: #1a1c18;
+    }
+   }
+  }
+
+  .buttonAction {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+
+   svg {
+    transform: rotate(45deg);
+    path {
+     width: 13px;
+     height: 13px;
+     fill: #2b6c00;
+    }
+   }
+  }
+ }
+
+ .mainQuestionnaireCards {
+  margin: 0 56px 0 56px;
+ }
+
+ .reStyleImportant {
+  margin: 0 56px 0 56px;
+
+  div {
+   padding: 0;
+
+   h2 {
+    display: none;
+   }
+  }
+ }
+
+ .mainQuestionnaireCards {
+ }
+}

@@ -1,0 +1,44 @@
+@import "src/styles/variable";
+
+.received {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $mediaMaxWidth575px) {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  @media (max-width: $mediaMaxWidth340px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .status {
+    color: #2b6c00;
+
+    @media (max-width: $mediaMaxWidth340px) {
+      align-self: flex-start;
+    }
+
+    img {
+      margin-right: 6px;
+    }
+  }
+
+  .showAuthor {
+    color: #2b6c00;
+    height: 40px;
+
+    @media (max-width: $mediaMaxWidth340px) {
+      width: 100%;
+    }
+
+    .btnWrapper {
+      @include flex_horizont_position();
+      height: 40px;
+    }
+  }
+}

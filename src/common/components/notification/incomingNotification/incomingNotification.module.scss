@@ -1,0 +1,23 @@
+@import "src/styles/variable";
+
+.addGapStyle {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+
+ .reStyleImportant {
+  div {
+   padding: 0;
+
+   h2 {
+    display: none;
+   }
+  }
+ }
+
+ .publicationDate {
+  padding-top: 8px;
+  font-size: 12px;
+  color: #43483e;
+ }
+}

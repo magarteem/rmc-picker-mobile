@@ -1,0 +1,71 @@
+@import "src/styles//variable";
+
+@font-face {
+ font-family: "SFProTextRegular";
+ src: local("SFProTextRegular"), url(../assets/fonts/SFProTextRegular.woff) format("woff");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "Rubik";
+ src: local("Rubik"), url(../assets/fonts/Rubik.woff) format("woff");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "Raleway";
+ src: local("Raleway"), url(../assets/fonts/Raleway.woff) format("woff");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "Mulish_Bold";
+ src: local("Mulish_Bold"), url(../assets/fonts/Mulish_Bold.woff) format("woff");
+ font-display: fallback;
+}
+
+@font-face {
+ font-family: "SF_UI_Text";
+ src: local("SF_UI_Text"), url(../assets/fonts/SF_UI_Text.woff) format("woff");
+ font-display: fallback;
+}
+@font-face {
+ font-family: "Mulish_Regular";
+ src: local("Mulish_Regular"), url(../assets/fonts/Mulish_Regular.woff2) format("woff2");
+ font-display: fallback;
+}
+@font-face {
+ font-family: "Gilroy_Bold";
+ src: local("Gilroy_Bold"), url(../assets/fonts/Gilroy_Bold.woff2) format("woff2");
+ font-display: fallback;
+}
+
+html,
+body {
+ //overscroll-behavior: contain;
+ height: 100%;
+ font-family: "Mulish_Regular", sans-serif;
+ font-size: 16px;
+ font-weight: 400;
+ // overflow-x: hidden;
+ background-color: #fdfdf5; // 11.03.23 add
+
+ .App {
+  @include flex_direction_column_align_center_position();
+  position: relative;
+  height: 100vh;
+  //background-color: #fdfdf5;  // 11.03.23 remove
+
+  @media (max-width: $mediaMaxWidth1260px) {
+  }
+
+  @media (max-width: $mediaMaxWidth480px) {
+  }
+
+  @media (max-width: $mediaMaxWidth375px) {
+  }
+
+  @media (max-width: $mediaMaxWidth320px) {
+  }
+ }
+}

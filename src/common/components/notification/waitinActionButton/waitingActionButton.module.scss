@@ -1,0 +1,17 @@
+@import "src/styles/variable";
+
+.pending {
+  display: flex;
+  align-items: center;
+  //height: 40px;
+  // margin: 16px;
+  //margin: 0 16px 16px;
+  padding: 0 16px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+
+  img {
+    margin-right: 8px;
+  }
+}

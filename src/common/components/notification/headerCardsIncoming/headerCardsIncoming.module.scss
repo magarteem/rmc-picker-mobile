@@ -1,0 +1,44 @@
+@import "src/styles/variable";
+
+.headerCardsIncoming {
+ display: flex;
+ // align-items: center;
+ justify-content: space-between;
+ padding-bottom: 12px;
+
+ .author {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+   margin-right: 16px;
+   width: 40px;
+   height: 40px;
+  }
+
+  .infoAuthor {
+   .name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a1c18;
+   }
+
+   .visit {
+    font-size: 14px;
+    color: #1a1c18;
+   }
+   .triggetInfo {
+    font-size: 14px;
+    display: block;
+    color: #1a1c18;
+
+    span {
+     color: #2b6c00;
+    }
+   }
+  }
+ }
+
+ .buttonAction {
+ }
+}

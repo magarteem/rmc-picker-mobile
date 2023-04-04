@@ -1,0 +1,50 @@
+@import "src/styles/variable";
+
+.welcomeWindow {
+  @include flex_direction_column_align_center_position();
+  width: 100%;
+  min-height: 100%;
+  justify-content: space-evenly;
+  flex: 1 0 auto;
+  padding: 0 16px;
+  background-image: $backgroundFonts;
+
+  .logoAnimated {
+    width: 80%;
+    animation: welcome ease 0.8s forwards;
+
+    @keyframes welcome {
+      100% {
+        width: 168px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .start {
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+
+    @media (max-width: $mediaMaxWidth340px) {
+      position: static;
+      margin-top: 50px;
+      font-size: 17px;
+    }
+
+    button {
+      @include flex_position();
+      width: 100%;
+      height: 52px;
+      margin-top: 28px;
+      font-size: 18px;
+      color: $white;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+  }
+}

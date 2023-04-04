@@ -1,0 +1,29 @@
+@import "src/styles/variable";
+
+.listAds {
+ width: 100%;
+
+ a {
+  text-decoration: none;
+ }
+
+ .respond {
+  margin: 0 16px 16px;
+
+  @include flex_horizont_position();
+  height: 40px;
+ }
+
+ .pending {
+  display: flex;
+  align-items: center;
+  // height: 40px;
+  margin: 0 16px 16px;
+  font-weight: 600;
+  font-size: 14px;
+
+  img {
+   margin-right: 8px;
+  }
+ }
+}

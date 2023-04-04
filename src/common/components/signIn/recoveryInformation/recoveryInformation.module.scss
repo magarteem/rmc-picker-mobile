@@ -1,0 +1,20 @@
+@import "src/styles/variable";
+
+.recoveryInformation {
+ width: 100%;
+ h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: $white;
+ }
+
+ .recoveryMessage {
+  margin: 20px 0 20px;
+  padding: 16px 24px;
+  font-size: 18px;
+  background: #f1f7e5;
+  color: #242424;
+  border-radius: 12px;
+  letter-spacing: 0.4px;
+ }
+}

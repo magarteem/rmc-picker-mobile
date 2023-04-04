@@ -1,0 +1,70 @@
+.datepicker-modal {
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-color: rgba(45, 44, 44, 0.6) !important;
+ z-index: 10000 !important;
+
+ .datepicker.default {
+  left: auto !important;
+  max-width: 600px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .datepicker-content {
+   .datepicker-col-1 {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+   }
+  }
+  .datepicker-navbar-btn {
+   font-size: 16px;
+  }
+ }
+}
+
+.wrappPicker {
+ height: 100%;
+}
+.error {
+ border-radius: 8px;
+ border: 1px solid red;
+}
+
+//.fieldCustomAge {
+// cursor: pointer;
+// display: flex;
+// align-items: center;
+// border: 1px solid #c6d1b8 !important;
+// border-radius: 8px;
+// height: 48px;
+// padding: 0 14px;
+// color: #1a1c18;
+// font-family: Mulish_Regular, sans-serif !important;
+// font-size: 16px !important;
+// font-weight: 600 !important;
+
+// .customAgePlaceholder {
+//  color: #242424;
+//  font-family: Mulish_Regular, sans-serif !important;
+//  font-size: 16px !important;
+//  font-weight: 500 !important;
+// }
+//}
+//.datepicker-modal {
+// background-color: rgba(45, 44, 44, 0.6) !important;
+// .presentation {
+//  .datepicker {
+//   position: absolute;
+//   bottom: 50px !important;
+//   left: auto !important;
+//   max-width: 600px;
+//  }
+// }
+//}

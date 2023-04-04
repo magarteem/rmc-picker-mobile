@@ -1,0 +1,20 @@
+@import "src/styles/variable";
+
+.formatGroupLabel {
+  display: flex;
+  align-items: center;
+
+  .arrowSelectImg {
+    @include flex_position();
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #242424;
+    text-transform: none;
+  }
+}

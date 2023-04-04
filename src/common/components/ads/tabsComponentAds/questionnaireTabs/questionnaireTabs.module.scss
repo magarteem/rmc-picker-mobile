@@ -1,0 +1,13 @@
+@import "src/styles/variable";
+
+.recommendations {
+ font-weight: 700;
+ font-size: 18px;
+ color: #212121;
+}
+
+.mainQuestionnaire {
+ & > div:not(:first-child) {
+  border-top: 1px solid #ecebeb;
+ }
+}

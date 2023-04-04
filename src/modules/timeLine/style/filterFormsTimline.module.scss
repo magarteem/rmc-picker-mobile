@@ -1,0 +1,39 @@
+@import "src/styles/variable";
+
+.headerForms {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+
+ h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #43483e;
+ }
+
+ h5 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2b6c00;
+ }
+}
+
+.gawField {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+
+ .selectField {
+  display: flex;
+  align-items: center;
+  min-width: 133px;
+ }
+}
+
+.btnWrapper {
+ @include flex_horizont_position();
+ height: 40px;
+ width: 100%;
+ margin: 20px 0;
+}
